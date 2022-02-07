@@ -1,14 +1,31 @@
 ![](./.github/banner.png)
 
 <p align="center">
-    Extract the serial number of a remote Fortinet device.
+    A Python script to extract the serial number of a remote Fortinet device.
+    <br>
+    <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/p0dalirius/GetFortinetSerialNumber">
+    <a href="https://twitter.com/intent/follow?screen_name=podalirius_" title="Follow"><img src="https://img.shields.io/twitter/follow/podalirius_?label=Podalirius&style=social"></a>
+    <br>
 </p>
 
-<p align="center">
-  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/p0dalirius/GetFortinetSerialNumber">
-  <a href="https://twitter.com/intent/follow?screen_name=podalirius_" title="Follow"><img src="https://img.shields.io/twitter/follow/podalirius_?label=Podalirius&style=social"></a>
-  <br>
-</p>
+
+
+## Usage
+
+```
+$ ./GetFortinetSerialNumber.py -h
+usage: GetFortinetSerialNumber.py [-h] -H HOST [-P PORT] [-o OUTPUT_CERT] [-v]
+
+Description message
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -H HOST, --host HOST  Fortinet target
+  -P PORT, --port PORT  Fortinet target
+  -o OUTPUT_CERT, --output-cert OUTPUT_CERT
+                        Ouput PEM certificate.
+  -v, --verbose         Ouput PEM certificate.
+```
 
 ## Example
 
