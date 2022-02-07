@@ -1,0 +1,35 @@
+[+] Retrieving the server certificate in PEM format ...
+[>] Trying to connect to forti.example.com:443 using TLS ...
+-----BEGIN CERTIFICATE-----
+MIIDyTCCArG6ZNPTDE+dTzuMaJMvU4HFJ9qyuppg/VhJQVsWe/4FTNgjF1HlOezW
+LY6IbCdOWPdJdsi6kQm8n3nTfsfS1tvxcDe+Qy14kwnF6dOoHB2Zwez6ELFUYT8I
+A2eW1uqPjq3GfvFadmgAUiCxg/KE19vPlKf24wPqkc6t91EjFf/saCs1A3Ns7Jfy
+ygXDzPfYux5KKpHbTSoHO2pVW2kfjQtst5d3/9oYs8Ad/supCUjo28maOGodMWYB
+Pv820Dm1CBVzQaz5Fhiw+7bP6+Xw45aBiEDgoeUZUhNbDsWUwt6Tpel8XJ52SgKP
+wxpR96Wi7zxNOnJz4bfCMUPWu8XOJkAJhTRv8n/9mbwUNZ/SqVZLZBebjwn6FHdh
+D0DNUsUSVuAZ/P8ddn9yFb80sThVO6vThxcdp+6p4ckxvkxllGk1yyAr1Hee0hDZ
+C1KhojdfT3+XQ+WEFYjOTt1C7Rb5sX1BaAXx6GIoXRAPdsFRuMGD4f4Qk8lOLni/
+sqpW79WAok1xgYB2SvVWiN48mhfxQvxRW4Wrz1oLutnhgLSRQCr4nuP4cJa6nNYV
+TZQAwRCNc3vHIHRAhZFJs5xi2c4/tnl2zy1vmwctvqsJz5eSNKQ9KaG6V0jOS57a
+veUQx8g8jw2BpN8wkIOXB7ir32C+XASJM/ZwrScSpyAN/keNQp14raP/Mlo/OKyB
+5XIbnCBDxkfPaGdSnkLDIf9DXKD1C2NrArQ3/Zu5oODb2yc2tZ3El9Ugaltbxut7
+FPVvkduz08zgQXRXTzkL6qNb0HlZy2axNKOR3Rni+WxLedKZHFD9OP7kYNWPv7iH
+Mq/iQFIKnDE4wTHwc2L9ORMwwIK35LV2vULlcCCiH340CSJuGXL+Cs39YLniMEx8
+Eda5PMZbK/GARA/JO0JFefYaNn0+I2fAWh6me/NFeHbIMZs3IrK4tVuT2yatNZQ9
+T1RNmLrIlPx0vWprqdrdhrk8miptgTelr5+kq3MhHwN3CMbo/WXNLr9HKdA9Uv+N
+GXRW7OYfT9f0UMd4AgNqwQUYitGFlayDE9TW/SvZFX/052Fb9TCD/WQ4vQoRvADJ
+GBlrAsWQoTuzN+/3/va3HuDWbm9OUJ4/Abl/5ZeLKzSDN7uPgXDhZ/Ucwr7REwi3
+cf4unSnlrlnKubROeQ83yMIv9XBoypUHoXS7PUXVNwPll2cDf9K0zElbiJpq/2hs
+BNIs/tNhl7EfelW0Vhi/UuTLyoBYpKrBiDHra9UmqncEYQ6ma7WPoYAUw1AzNMWW
+ZmvZOaCNzjpeC2+xNJ==
+-----END CERTIFICATE-----
+
+[+] Getting certificate information ...
+[+] Issuer: C=US/ST=California/L=Sunnyvale/O=Fortinet/OU=Certificate Authority/CN=support/emailAddress=support@fortinet.com
+[+] Subject: C=US/ST=California/L=Sunnyvale/O=Fortinet/OU=FortiGate/CN=FGT60DPA12345789/emailAddress=support@fortinet.com
+  | Serial number: FGT60DPA12345789
+  |   Detected FortiGate 60D (FGT60D-4Q16045038)
+  |   If you have a console access, here is the default password:
+  |   | Username: maintainer
+  |   | Password: bcpbFGT60DPA12345789
+[+] 1 serial number(s) found in forti.example.com:443 certificate information.
