@@ -46,7 +46,7 @@ def detect_forti_from_sn(sn, verbose=False):
 
 
 def parseArgs():
-    parser = argparse.ArgumentParser(description="Description message")
+    parser = argparse.ArgumentParser(description="A Python script to extract the serial number of a remote Fortinet device. ")
     parser.add_argument("-H", "--host", default=None, required=True, help='Fortinet target')
     parser.add_argument("-P", "--port", default=443, type=int, required=False, help='Fortinet target')
     parser.add_argument("-o", "--output-cert", default=None, required=False, help='Ouput PEM certificate.')
