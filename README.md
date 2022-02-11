@@ -16,7 +16,7 @@
 $ ./GetFortinetSerialNumber.py -h
 usage: GetFortinetSerialNumber.py [-h] -H HOST [-P PORT] [-o OUTPUT_CERT] [-v]
 
-Description message
+A Python script to extract the serial number of a remote Fortinet device. 
 
 optional arguments:
   -h, --help            show this help message and exit
