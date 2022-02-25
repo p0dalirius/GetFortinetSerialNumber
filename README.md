@@ -3,6 +3,7 @@
 <p align="center">
     A Python script to extract the serial number of a remote Fortinet device.
     <br>
+    <img src="https://badges.pufler.dev/visits/p0dalirius/GetFortinetSerialNumber/"/>
     <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/p0dalirius/GetFortinetSerialNumber">
     <a href="https://twitter.com/intent/follow?screen_name=podalirius_" title="Follow"><img src="https://img.shields.io/twitter/follow/podalirius_?label=Podalirius&style=social"></a>
     <br>
