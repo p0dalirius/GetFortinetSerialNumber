@@ -78,6 +78,8 @@ if __name__ == '__main__':
         except ssl.SSLError as e:
             if options.verbose:
                 print("[!] %s" % e)
+    except ConnectionRefusedError as e:
+        pass
 
     # Parsing certificate
     if cert is not None:
@@ -90,7 +92,8 @@ if __name__ == '__main__':
             if options.verbose:
                 print("[+] Certificate saved to %s!" % options.output_cert)
 
-        print("[+] Getting certificate information ...")
+        if options.verbose:
+            print("[+] Getting certificate information ...")
         x509 = OpenSSL.crypto.load_certificate(OpenSSL.crypto.FILETYPE_PEM, cert)
 
         _altnames = []
@@ -132,8 +135,10 @@ if __name__ == '__main__':
                     serial_numbers_found.append(sn)
                     detect_forti_from_sn(sn)
         if len(serial_numbers_found) == 0:
-            print("[!] No serial number found in %s:%d certificate information." % (options.host, options.port))
+            if options.verbose:
+                print("[!] No serial number found in %s:%d certificate information." % (options.host, options.port))
         else:
             print("[+] %d serial number(s) found in %s:%d certificate information." % (len(serial_numbers_found), options.host, options.port))
     else:
-        print("[!] Could not retrieve certificate.")
+        if options.verbose:
+            print("[!] Could not retrieve certificate.")
