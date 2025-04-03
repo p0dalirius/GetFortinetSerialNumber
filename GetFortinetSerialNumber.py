@@ -11,13 +11,21 @@ import ssl
 import requests
 import OpenSSL
 
-# Disable warings of insecure connection for invalid cerificates
+# Disable warnings of insecure connection for invalid certificates
 requests.packages.urllib3.disable_warnings()
 # Allow use of deprecated and weak cipher methods
-requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
+# Handle compatibility with different urllib3 versions
 try:
+    # For older urllib3 versions
+    requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
+except AttributeError:
+    # For newer urllib3 versions where DEFAULT_CIPHERS is not directly accessible
+    pass
+try:
+    # For older urllib3 versions with pyopenssl support
     requests.packages.urllib3.contrib.pyopenssl.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
 except AttributeError:
+    # For newer urllib3 versions or when pyopenssl is not available
     pass
 
 
@@ -49,8 +57,8 @@ def parseArgs():
     parser = argparse.ArgumentParser(description="A Python script to extract the serial number of a remote Fortinet device. ")
     parser.add_argument("-H", "--host", default=None, required=True, help='Fortinet target')
     parser.add_argument("-P", "--port", default=443, type=int, required=False, help='Fortinet target')
-    parser.add_argument("-o", "--output-cert", default=None, required=False, help='Ouput PEM certificate.')
-    parser.add_argument("-v", "--verbose", default=False, required=False, action='store_true', help='Ouput PEM certificate.')
+    parser.add_argument("-o", "--output-cert", default=None, required=False, help='Output PEM certificate.')
+    parser.add_argument("-v", "--verbose", default=False, required=False, action='store_true', help='Output PEM certificate.')
     return parser.parse_args()
 
 
