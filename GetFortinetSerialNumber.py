@@ -19,13 +19,11 @@ try:
     # For older urllib3 versions
     requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
 except AttributeError:
-    # For newer urllib3 versions where DEFAULT_CIPHERS is not directly accessible
+    # For newer urllib3 versions where DEFAULT_CIPHERS is not directly accessible, skip this
     pass
 try:
-    # For older urllib3 versions with pyopenssl support
     requests.packages.urllib3.contrib.pyopenssl.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
 except AttributeError:
-    # For newer urllib3 versions or when pyopenssl is not available
     pass
 
 
